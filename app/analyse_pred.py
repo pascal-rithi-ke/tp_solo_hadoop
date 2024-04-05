@@ -6,4 +6,3 @@ spark = SparkSession.builder.appName("Analyse Prediction").getOrCreate()
 data = spark.read.csv("app/csv/clean_data.csv", header=True, inferSchema=True)
 
 # data.printSchema()
-
